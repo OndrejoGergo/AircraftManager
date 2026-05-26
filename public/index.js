@@ -1,5 +1,6 @@
 const API_URL = "http://localhost:3000/aircrafts";
 
+
 async function loadAircrafts() {
   const response = await fetch(API_URL);
   const data = await response.json();
@@ -65,14 +66,14 @@ async function loadAircrafts() {
 
             <button 
               id="edit-btn-${aircraft.id}"
-              class="btn btn-primary btn-sm"
+              class="btn btn-primary btn-sm w-25"
               onclick="toggleEdit(${aircraft.id})"
             >
               Edit
             </button>
 
             <button 
-              class="btn btn-danger btn-sm"
+              class="btn btn-danger btn-sm w-25"
               onclick="deleteAircraft(${aircraft.id})"
             >
               Delete

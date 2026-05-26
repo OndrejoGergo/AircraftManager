@@ -87,6 +87,7 @@ export const deleteAircraft = (id) =>
     )
     .run(id);
 
+
 const { aircraftCount } = db
   .prepare(
     `
