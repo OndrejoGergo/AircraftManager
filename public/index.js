@@ -50,12 +50,12 @@ async function loadAircrafts() {
               class="form-control mb-2"
               value="${aircraft.capacity}" disabled>
 
-            <label class="form-label fw-bold">Max Speed</label>
+            <label class="form-label fw-bold">Max Speed (km/h)</label>
             <input type="number" id="maxSpeed-${aircraft.id}"
               class="form-control mb-2"
               value="${aircraft.maxSpeed}" disabled>
 
-            <label class="form-label fw-bold">Range</label>
+            <label class="form-label fw-bold">Range (km)</label>
             <input type="number" id="range-${aircraft.id}"
               class="form-control mb-2"
               value="${aircraft.range}" disabled>

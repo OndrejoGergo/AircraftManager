@@ -19,20 +19,32 @@
   <body class="bg-light">
 
     <nav class="navbar navbar-dark bg-dark shadow-sm fixed-top p-3">
-      <div class="container">
+      <div class="container d-flex justify-content-between align-items-center">
 
-        <span class="navbar-brand fw-bold">
+        <span class="navbar-brand fw-bold mb-0">
           ✈ Aircraft Manager
         </span>
 
-        <button class="btn btn-success" onclick="addAircraft()">
-          + Add Aircraft
-        </button>
+        <div class="d-flex gap-2">
+
+          <a href="index.html" class="btn btn-outline-light">
+            Aircrafts
+          </a>
+
+          <a href="routes.html" class="btn btn-outline-light">
+            Route Planner
+          </a>
+
+          <button class="btn btn-success" onclick="addAircraft()">
+            + Add Aircraft
+          </button>
+
+        </div>
 
       </div>
     </nav>
 
-    <div class="container" style="padding-top: 90px;">
+    <div class="container" style="padding-top: 100px;">
 
       <div class="row g-4" id="aircraft-list"></div>
 
